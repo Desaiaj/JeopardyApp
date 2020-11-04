@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Your Turn</title>
+<link rel="stylesheet" href="../static/Style/stylesheet.css"
+	th:href="@{/Style/stylesheet.css}" />
+</head>
+<body>
+	<div id="bodyQue"></div>
+	<main style="font-family: cursive;" class="question">
+		<div style="padding: 85px;">
+			<h3 style="float: left;">
+				Category: <span th:text="${session.question.category}"></span>
+			</h3>
+			<h3 style="float: right;">
+				Value: <span th:text="${session.question.value}"></span>
+			</h3>
+		</div>
+		<form action="/answerQuestion" method="get">
+			<div th:text="${session.question.question}">Question</div>
+			<input type="hidden" name="ques"
+				th:value="${session.question.question}">
+			<div>
+				<div>
+					<label> <input type="radio" name="ans"
+						th:value="${session.question.option1}"> <span
+						th:text="${session.question.option1}">option1</span>
+					</label><label><input type="radio" name="ans"
+						th:value="${session.question.option2}"> <span
+						th:text="${session.question.option2}">option2</span></label>
+				</div>
+				<div>
+					<label><input type="radio" name="ans"
+						th:value="${session.question.option3}"> <span
+						th:text="${session.question.option3}">option3</span> </label><label><input
+						type="radio" name="ans" th:value="${session.question.option4}">
+						<span th:text="${session.question.option4}">option4</span></label>
+				</div>
+			</div>
+			<div>
+				<input type="submit" name="submit" value="Answer">
+			</div>
+		</form>
+	</main>
+</body>
+</html>

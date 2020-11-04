@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" th:href="@{/Style/stylesheet.css}" />
+<link th:href="@{https://fonts.googleapis.com/css?family=Shadows+Into+Light&display=swap}"
+	rel="stylesheet">
+</head>
+<body id="bodypg2">
+	<header class="headpg2">
+		<div id="title">
+			<b><i>Welcome <span th:text="${session.player.name}">User</span></i></b>
+		</div>
+		<div id="score">
+			<b><i>You are Winning: $<span th:text="${session.player.score}"></span></i></b>
+		</div>
+	</header>
+	<main id="mainpg2">
+		<div>Car</div>
+		<div>Music</div>
+		<div>Sport</div>
+		<div>Actor</div>
+		<div>Phone</div>
+		<div>
+			<a href=""
+				th:href="(${session.answered.category!='Car'})?@{/pickQuestion/{category}/{value}(category='Car',value=100)}:'#'">
+				<img src="../static/images/100.PNG" th:src="@{/images/100.PNG}" />
+			</a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Music',value=100)}"> <img
+				src="../images/100.PNG" th:src="@{/images/100.PNG}" />
+			</a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Sport',value=100)}"> <img
+				src="../images/100.PNG" th:src="@{/images/100.PNG}" />
+			</a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Actor',value=100)}"> <img
+				src="../images/100.PNG" th:src="@{/images/100.PNG}" />
+			</a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Phone',value=100)}"> <img
+				src="../images/100.PNG" th:src="@{/images/100.PNG}" />
+			</a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Car',value=200)}"><img
+				src="../static/images/200.png" th:src="@{/images/200.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Music',value=200)}"><img
+				src="../static/images/200.png" th:src="@{/images/200.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Sport',value=200)}"><img
+				src="../static/images/200.png" th:src="@{/images/200.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Actor',value=200)}"><img
+				src="../static/images/200.png" th:src="@{/images/200.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Phone',value=200)}"><img
+				src="../static/images/200.png" th:src="@{/images/200.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Car',value=300)}"><img
+				src="../static/images/300.png" th:src="@{/images/300.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Music',value=300)}"><img
+				src="../static/images/300.png" th:src="@{/images/300.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Sport',value=300)}"><img
+				src="../static/images/300.png" th:src="@{/images/300.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Actor',value=300)}"><img
+				src="../static/images/300.png" th:src="@{/images/300.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Phone',value=300)}"><img
+				src="../static/images/300.png" th:src="@{/images/300.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Car',value=400)}"><img
+				src="../static/images/400.png" th:src="@{/images/400.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Music',value=400)}"><img
+				src="../static/images/400.png" th:src="@{/images/400.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Sport',value=400)}"><img
+				src="../static/images/400.png" th:src="@{/images/400.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Actor',value=400)}"><img
+				src="../static/images/400.png" th:src="@{/images/400.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Phone',value=400)}"><img
+				src="../static/images/400.png" th:src="@{/images/400.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Car',value=500)}"><img
+				src="../static/images/500.png" th:src="@{/images/500.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Music',value=500)}"><img
+				src="../static/images/500.png" th:src="@{/images/500.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Sport',value=500)}"><img
+				src="../static/images/500.png" th:src="@{/images/500.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Actor',value=500)}"><img
+				src="../static/images/500.png" th:src="@{/images/500.png}" /></a>
+		</div>
+		<div>
+			<a href="" th:href="@{/pickQuestion/{category}/{value}(category='Phone',value=500)}"><img
+				src="../static/images/500.png" th:src="@{/images/500.png}" /></a>
+		</div>
+	</main>
+</body>
+</html>

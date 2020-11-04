@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+
+.bg {
+	background: url("../images/seashore-beach-background-x.jpg")
+		no-repeat;
+	height: -webkit-fill-available;
+	background-size: cover;
+	opacity: 0.3;
+	position: fixed;
+	width: -webkit-fill-available;
+	z-index: -1;
+}
+
+#loginpg {
+	font-family: fantasy, -webkit-pictograph;
+	font-size: 10em;
+	text-align: center;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+#mainpg1 {
+	margin-top: 10%;
+	text-align: center;
+}
+
+.User {
+	width: 20%;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	padding: 8px;
+}
+
+.submit {
+	width: 64px;
+	height: 64px;
+	background: url("../images/enter-2.png");
+	border: none;
+	background-repeat: no-repeat;
+	vertical-align: middle;
+}
+
+#bodypg2 {
+	background: linear-gradient(217deg, rgba(0, 243, 255, 0.18),
+		rgba(255, 0, 0, 0) 70.71%),
+		linear-gradient(127deg, rgba(169, 0, 255, 0.05), rgba(0, 255, 0, 0)
+		70.71%), linear-gradient(336deg, rgba(0, 0, 255, 0.01),
+		rgba(0, 0, 255, 0) 70.71%);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.headpg2 {
+	font-size: 250%;
+	padding: 10px;
+}
+
+#title {
+	display: inline-block;
+}
+
+#score {
+	float: right;
+}
+
+#mainpg2 {
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+}
+
+#mainpg2>div {
+	font-size: xx-large;
+	background-color: rgba(255, 255, 255, 0);
+	text-align: center;
+}
+
+#bodyQue {
+	background: url(../images/seashore-beach-background-x.jpg) no-repeat;
+	height: -webkit-fill-available;
+	background-size: cover;
+	opacity: 0.3;
+	position: fixed;
+	width: -webkit-fill-available;
+	z-index: -1;
+}
+
+.question {
+	font-size: 1.5em;
+	text-align: center;
+}
